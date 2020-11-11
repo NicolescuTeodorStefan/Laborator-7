@@ -1,0 +1,78 @@
+
+<!-- saved from url=(0068)file:///C:/Users/Steffe/Desktop/Lab06/Nicolescu%20Teodor-Stefan.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="./Nicolescu Teodor-Stefan_files/Catalog_Styles.css">
+<script>
+function viitor()
+{
+document.getElementById("nume").innerHTML = "Dr.ing.Nicolescu Teodor-Stefan";
+document.getElementById("poza").src="Nicolescu Teodor-Stefan-POZA.jpg";
+document.getElementById("poza").style.opacity="50%";
+document.body.style.backgroundColor="lightgreen";
+document.getElementById("citat").style.fontSize="35px";
+document.getElementById("hobby1").innerHTML="Ciclism";
+document.getElementById("hobby2").innerHTML="Dezvoltare aplicatii";
+document.getElementById("hobby3").innerHTML="Cinematografie";
+var tabel = document.getElementById("tabel");
+tabel.rows[0].cells[0].innerHTML="UTCN";
+tabel.rows[1].cells[0].innerHTML="Electronica";
+tabel.rows[2].cells[0].innerHTML="Programare WEB";
+}
+function varsta(){
+	var azi=new Date;
+	var varstamea;
+	
+	var anNastere=document.getElementById("varsta").innerHTML;
+	var anCurent=azi.getFullYear();
+	 varstamea=anCurent-anNastere;
+	 document.getElementById("varsta").innerHTML=varstamea;
+}
+</script>
+</head>
+<body>
+<h1 id="nume">
+Nume: Nicolescu Teodor-Stefan
+</h1>
+<p>Adresa de e-mail: Nicolescu.Do.Teodor@utcluj.didatec.ro</p>
+<img id="poza" src="./Nicolescu Teodor-Stefan_files/Nicolescu Teodor-Stefan-POZA.jpg">
+<button onclick="viitor()">Alta viata</button> 
+<p onmouseover="varsta()" id="varsta">19</p> 
+<p id="citat"> Citat:"Un popor fara cultura este un popor usor de manipulat". (Immanuel Kant)</p>
+<p> Numar de telefon: 0727xxxxxx</p>
+<p> Intentionez sa aprofundez urmatoarele discipline din cadrul Facultatii de
+	Electronica, Telecomunicatii si Tehnologia Informatiei: </p>
+<table id="tabel">
+  <tbody><tr>
+    <th>Disciplina</th>
+    <th>Anul de studiu</th> 
+    <th>Link prezentare</th>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor</td>
+    <td>2020-2021</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">
+	Vezi prezentare: Programarea calculatoarelor</a></td>
+  </tr>
+  <tr>
+    <td>Algebra liniara</td>
+    <td>2020-2021</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf">
+	Vezi prezentare: Algebra liniara</a></td>
+  </tr>
+  <tr>
+    <td>Elemente de fizica</td>
+    <td>2020-2021</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf">
+	Vezi prezentare: Elemente de fizica</a></td>
+  </tr>
+</tbody></table>
+<h2>Cateva dintre hobby-urile mele sunt: </h2>
+<ul>
+  <li id="hobby1">Muzica</li>
+  <li id="hobby2">Programare</li>
+  <li id="hobby3">Alergat</li>
+</ul>
+
+<a href="file:///C:/Users/Steffe/Desktop/Lab06/Catalog.html"> INAPOI </a>
+
+</body></html>
